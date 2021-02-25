@@ -33,16 +33,6 @@ public class MainActivity extends AppCompatActivity {
     ListView notesListView;
     ArrayAdapter<Note> noteArrayAdapter;
 
-//    <?xml version="1.0" encoding="utf-8"?>
-//<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-//    android:id="@+id/text1"
-//    android:layout_height="?android:listPreferredItemHeight"
-//    android:layout_width="fill_parent"
-//    android:textSize="20sp"
-//    android:gravity="center"
-//    android:textColor="@color/white"
-//            />
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,8 +119,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void createExampleNote(ArrayList<Note> notes) {
         Note exampleNote = new Note();
-        exampleNote.setTitle("Hoi");
-        exampleNote.setNote("blablablablabla");
+        exampleNote.setTitle("Example note, delete by long pressing");
+        exampleNote.setNote("This is an example note, on this screen you can edit your notes!");
         exampleNote.setID(0);
         notes.add(exampleNote);
     }
