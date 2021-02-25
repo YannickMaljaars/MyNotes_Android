@@ -11,3 +11,6 @@ Video demo of app here:
 TODO:
 
 Make data persistent after app closed. SharedPreferences can't take objects, looking for another way
+
+
+Java code can be found under: app/src/main/java/com/yannick/mynotes
