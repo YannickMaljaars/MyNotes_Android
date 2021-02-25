@@ -8,3 +8,6 @@ Video demo of app here:
 
 [![Video demo](https://img.youtube.com/vi/UVDgeH9-GB0/0.jpg)](https://www.youtube.com/watch?v=UVDgeH9-GB0)
 
+TODO:
+
+Make data persistent after app closed. SharedPreferences can't take objects, looking for another way
