@@ -29,6 +29,7 @@ public class WriteNote extends AppCompatActivity {
         Intent intent = getIntent();
         noteID = intent.getIntExtra("noteID", -1);
 
+            //get extras from main activity, in case of a clicked note get note data
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
             if(extras == null) {
@@ -44,7 +45,7 @@ public class WriteNote extends AppCompatActivity {
 
         }
     }
-
+        //save the note and parse it to the main activity
     public void saveNote(View view) {
         thisNote.setTitle(editTextTitle.getText().toString());
         thisNote.setNote(editTextNote.getText().toString());

@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //If there are no notes yet, create example note
         if (notes.size() == 0) {
             createExampleNote(notes);
         }
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         addSavedNote(savedInstanceState);
 
+            //On item click in list, go to edit page for clicked item
         notesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -63,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+                //On item long click in list, delete item
         notesListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
